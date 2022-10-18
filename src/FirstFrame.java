@@ -4,7 +4,10 @@ import javax.swing.JButton;
 import java.awt.BorderLayout;
 import java.awt.Container;
 
-public class FirstFrame extends JFrame{
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class FirstFrame extends JFrame implements ActionListener{
 
     public FirstFrame(){
     
@@ -18,6 +21,9 @@ public class FirstFrame extends JFrame{
         c.add(BorderLayout.EAST, new JButton("Botão Leste"));
         c.add(BorderLayout.WEST, new JButton("Botão Oeste"));
         c.add(BorderLayout.SOUTH, new JButton("Botão Sul"));
+
+        //Criando Listeners para os botões
+        
        
 
         //Configurando o frame
